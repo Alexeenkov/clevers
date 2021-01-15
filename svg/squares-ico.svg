@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+<defs>
+<path id="divra" d="M1152 821a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/>
+<path id="divrb" d="M1162 821a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/>
+<path id="divrc" d="M1152 831a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/>
+<path id="divrd" d="M1162 831a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/>
+</defs>
+<g>
+<g transform="translate(-1152 -820)">
+<g>
+<g><use fill="#b89669" xlink:href="#divra"/></g>
+<g><use fill="#b89669" xlink:href="#divrb"/></g>
+<g><use fill="#b89669" xlink:href="#divrc"/></g>
+<g><use fill="#b89669" xlink:href="#divrd"/></g>
+</g></g></g></svg> 
