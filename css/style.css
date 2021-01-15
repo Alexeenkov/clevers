@@ -1,0 +1,217 @@
+/* ! ------------------------fonts-------------------- */
+@font-face {
+  font-family: "Lava Pro Bold";
+  src: url("LavaPro-Bold.eot");
+  src: url("LavaPro-Bold.eot?#iefix") format("embedded-opentype"), "LavaPro-Bold.woff2" format("woff2"), url("LavaPro-Bold.woff") format("woff"), url("LavaPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* ! -------------------reset-styles------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* ! ------------------------body-------------------- */
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: calc(100vw - 90%);
+  background-color: #0d0d0d;
+  color: #fff;
+  z-index: 999;
+}
+.header__wrapper {
+  position: relative;
+  z-index: 99;
+  height: 100vh;
+  padding: 30% 25%;
+}
+.header__logo {
+  position: relative;
+  z-index: 99;
+}
+.header__burger {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 23px;
+  color: #fff;
+  background-color: #0d0d0d;
+  cursor: pointer;
+}
+.header__burger:focus {
+  outline: none;
+}
+.header__burger span {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  top: 10px;
+  transition: all 0.5s ease 0s;
+}
+.header__burger::after, .header__burger::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.5s ease 0s;
+}
+.header__burger::after {
+  bottom: 0;
+}
+.header__burger::before {
+  top: 0;
+}
+.header__burger.active span {
+  transform: scale(0);
+}
+.header__burger.active::before {
+  transform: rotate(45deg);
+  top: 11px;
+}
+.header__burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+.header__burger-sign {
+  display: block;
+  margin-top: 40px;
+  transform: translateX(-9px);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header__menu {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-color: #0d0d0d;
+  transition: all 1.3s ease 0s;
+}
+.header__menu.active {
+  left: 0;
+}
+.header__menu-background {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  padding-left: calc(100vw - 90%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1e1e1e;
+  transition: all 1.3s ease 0.2s;
+  color: #fff;
+}
+.header__menu-background.active {
+  left: 0;
+}
+.header__list {
+  font-size: 50px;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+.header__link {
+  transition: all 0.4s ease 0s;
+}
+.header__link:hover {
+  color: #6b94b3;
+}
+
+body.burger-lock {
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #195a8bcc;
+}
+.main__wrapper {
+  position: absolute;
+  bottom: 8%;
+  left: calc(100vw - 85%);
+}
+.main__title {
+  font-size: 35px;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+.main__logo {
+  margin-top: 20px;
+  width: 90%;
+}
+.main__slogan {
+  margin-top: 50px;
+  font-size: 80px;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.main__slogan_line-height {
+  margin-top: -20px;
+}
